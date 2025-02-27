@@ -15,6 +15,16 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         .content {
@@ -101,20 +111,24 @@
             background: rgba(0, 0, 0, 0.7);
             padding: 15px 20px;
             text-align: center;
+            border-top: 2px solid white;
+            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
         }
 
         .menu-bar a {
             font-size: 1.2rem;
-            margin: 0 10px;
+            margin: 0 15px;
             padding: 10px 20px;
-            border-radius: 20px;
+            border-radius: 25px;
             text-decoration: none;
             color: #fff;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
 
         .menu-bar a:hover {
             opacity: 0.9;
+            transform: scale(1.1);
         }
 
         .menu-bar .btn-events {
@@ -128,6 +142,12 @@
         footer {
             margin-top: auto;
         }
+
+        marquee {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -136,12 +156,12 @@
         <span class="text vaish">Vaish</span>
         <span class="text merged">V²</span>
     </div>
-    
+
     <footer>
         <div class="menu-bar">
-            <marquee><h2>#Ved&VaishWedding</h2></marquee>
-            <a href="event.html" class="btn btn-events">Events</a>
-            <a href="https://drive.google.com/drive/folders/your-google-drive-link" class="btn btn-gallery" target="_blank">Gallery</a>
+            <marquee>#Ved&VaishWedding - A Moment to Cherish Forever!</marquee>
+            <a href="events.html" class="btn btn-events">Explore Events</a>
+            <a href="https://drive.google.com/drive/folders/your-google-drive-link" class="btn btn-gallery" target="_blank">View Gallery</a>
         </div>
     </footer>
 </body>
