@@ -47,27 +47,28 @@
         }
 
         .vedang {
-            font-family: 'Great Vibes', cursive; /* Fancy font */
-            font-size: 6rem; /* Slightly larger for elegance */
-            top: 25%;
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            top: 10%;
             transform: translateY(-50%);
-            animation: vedangSlideIn 3s forwards 2s;
-            letter-spacing: 2px; /* Adds spacing for a refined look */
+            animation: vedangSlideIn 3s forwards;
+            letter-spacing: 2px;
         }
 
         .vaishnavi {
-            font-family: 'Great Vibes', cursive; /* Fancy font */
-            font-size: 6rem; /* Slightly larger for elegance */
-            bottom: 25%;
-            transform: translateY(50%);
-            animation: vaishnaviSlideIn 3s forwards 2s;
-            letter-spacing: 2px; /* Adds spacing for a refined look */
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            top: 20%;
+            transform: translateY(-50%);
+            animation: vaishnaviSlideIn 3s forwards;
+            letter-spacing: 2px;
         }
 
         .merged {
-            font-size: 6rem;
+            font-size: 4rem;
+            top: 15%;
             opacity: 0;
-            animation: mergeLogo 4s forwards 5s, transformToV2 2s forwards 9s;
+            animation: mergeLogo 2s forwards 3s;
         }
 
         @keyframes vedangSlideIn {
@@ -77,9 +78,9 @@
         }
 
         @keyframes vaishnaviSlideIn {
-            0% { transform: translateX(100%) translateY(50%); opacity: 0; }
-            50% { transform: translateX(0) translateY(50%); opacity: 1; }
-            100% { transform: translateX(0) translateY(50%); opacity: 0; }
+            0% { transform: translateX(100%) translateY(-50%); opacity: 0; }
+            50% { transform: translateX(0) translateY(-50%); opacity: 1; }
+            100% { transform: translateX(0) translateY(-50%); opacity: 0; }
         }
 
         @keyframes mergeLogo {
@@ -87,36 +88,25 @@
             100% { opacity: 1; transform: scale(1.2); }
         }
 
-        @keyframes transformToV2 {
-            0% { content: "V&V"; opacity: 1; }
-            50% { opacity: 0; transform: scale(1.1); }
-            100% { opacity: 1; transform: scale(1.2); }
-        }
-
         .merged::after {
-            content: "V&V";
-            animation: changeContent 2s forwards 9s;
+            content: "V²";
         }
 
-        @keyframes changeContent {
-            0% { content: "V&V"; }
-            50% { opacity: 0; }
-            100% { content: "V²"; opacity: 1; }
-        }
-
-        .date {
-            font-size: 1.8rem;
+        .invite {
+            font-size: 1.5rem;
             position: absolute;
-            top: 20px;
+            top: 50%; /* Moved up from 60% to 50% */
             color: #fff;
             text-shadow: 0 0 10px #ff6f91;
-            animation: dateFadeIn 2s ease-in-out forwards;
+            animation: inviteFadeIn 2s ease-in-out forwards;
             opacity: 0;
             z-index: 2;
+            max-width: 80%;
+            line-height: 1.5;
         }
 
-        @keyframes dateFadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
+        @keyframes inviteFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
@@ -165,15 +155,17 @@
 </head>
 <body>
     <div class="content">
-        <div class="date">Engagement: 19th April 2025</div>
         <span class="text vedang">Mr. Vedang</span>
         <span class="text vaishnavi">Ms. Vaishnavi</span>
         <span class="text merged"></span>
+        <div class="invite">
+            You are cordially invited to celebrate the engagement of Vedang and Vaishnavi on April 19th, 2025. Join us for a day filled with love, joy, and cherished moments!
+        </div>
     </div>
 
     <footer>
         <div class="menu-bar">
-            <marquee>#Vedang&VaishnaviWedding - A Love Story Begins!</marquee>
+            <marquee>#Ved&VaishWedding - A Love Story Begins!</marquee>
             <a href="event.html" class="btn btn-events">Explore Events</a>
             <a href="https://drive.google.com/drive/folders/1QJHOrauukM2rV0qvx3HQVA0tFj3QiEQo" class="btn btn-gallery" target="_blank">View Gallery</a>
         </div>
