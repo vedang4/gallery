@@ -1,105 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Events - Vedang & Vaishnavi</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Dancing Script and Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        /* Custom Animations */
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        .animate-fade-in {
-            animation: fadeIn 1s ease-out forwards;
-        }
-
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Card Hover Effect */
-        .event-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .event-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Background Gradient */
-        .header-bg {
-            background: linear-gradient(135deg, #fff0f5, #ffe4e1);
-            position: relative;
-            overflow: hidden;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Events - Vedang & Vaishnavi</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Dancing Script and Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+    html { scroll-behavior: smooth; }
+    .event-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .event-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); }
+    .header-bg {
+      background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body class="bg-white font-poppins text-gray-800">
-    <!-- Header -->
-    <header class="header-bg py-12 text-center">
-        <h1 class="text-5xl md:text-6xl font-dancing-script text-pink-600 animate-fade-in">Wedding Events</h1>
-    </header>
+  <!-- Header -->
+  <header class="header-bg py-12 text-center">
+    <h1 class="text-5xl md:text-6xl font-dancing-script text-pink-600 animate-fade-in">Wedding Events</h1>
+  </header>
 
-    <!-- Navigation Bar -->
-    <nav class="sticky top-0 bg-white shadow-lg z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-dancing-script text-pink-600">Vedang & Vaishnavi</div>
-            <div class="space-x-4">
-                <a href="index.html" class="text-gray-600 hover:text-pink-600 transition">Home</a>
-                <a href="#events" class="text-gray-600 hover:text-pink-600 transition">Events</a>
-                <a href="https://drive.google.com/drive/folders/1QJHOrauukM2rV0qvx3HQVA0tFj3QiEQo" target="_blank" class="text-gray-600 hover:text-pink-600 transition">Gallery</a>
-            </div>
+  <!-- Navigation -->
+  <nav class="sticky top-0 bg-white shadow-lg z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-dancing-script text-pink-600">Vedang & Vaishnavi</div>
+      <div class="space-x-4">
+        <a href="index.html" class="text-gray-600 hover:text-pink-600 transition">Home</a>
+        <a href="#events" class="text-gray-600 hover:text-pink-600 transition">Events</a>
+        <a href="https://drive.google.com/drive/folders/1QJHOrauukM2rV0qvx3HQVA0tFj3QiEQo" target="_blank" class="text-gray-600 hover:text-pink-600 transition">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Events Section -->
+  <section id="events" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid gap-8 md:grid-cols-2">
+
+        <!-- Devbramhan Morning -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-pink-600 mb-4">Devbramhan (Morning) – शुभ प्रारंभ</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 27th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> Yellow Kurta for Gents, Yellow Saree/Dress for Ladies</p>
         </div>
-    </nav>
 
-    <!-- Events Section -->
-    <section id="events" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="grid gap-8 md:grid-cols-2">
-                <!-- Engagement Ceremony -->
-                <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
-                    <h2 class="text-3xl font-dancing-script text-pink-600 mb-4">Engagement Ceremony</h2>
-                    <p class="text-gray-600 mb-2"><strong>Date:</strong> 19th April 2025</p>
-                    <p class="text-gray-600 mb-2"><strong>Time:</strong> 11 AM</p>
-                    <p class="text-gray-600 mb-2"><strong>Location:</strong> Hotel Utsav Square</p>
-                    <p class="text-gray-600"><strong>Dress Code:</strong> Traditional Attire</p>
-                </div>
-                <!-- Wedding Ceremony -->
-                <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in" style="animation-delay: 0.2s;">
-                    <h2 class="text-3xl font-dancing-script text-pink-600 mb-4">Wedding Ceremony</h2>
-                    <p class="text-gray-600 mb-2"><strong>Date:</strong> Coming Soon</p>
-                    <p class="text-gray-600 mb-2"><strong>Time:</strong> Coming Soon</p>
-                    <p class="text-gray-600 mb-2"><strong>Location:</strong> Coming Soon</p>
-                    <p class="text-gray-600"><strong>Dress Code:</strong> Coming Soon</p>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <a href="index.html" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition text-lg font-poppins">
-                    Back to Home
-                </a>
-            </div>
+        <!-- Mehendi -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-green-600 mb-4">Mehendi – मेहंदी के रंग, अपनों के संग</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 27th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> Green Outfits for Both</p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-lg">#VedVi - A Love Story Begins!</p>
+        <!-- Simanti Pujan -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-yellow-700 mb-4">Simanti Pujan – परंपरा की पहचान</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 29th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> South Indian Look for Ladies, Any Option for Gents</p>
         </div>
-    </footer>
 
-    <!-- Scroll to Top Button -->
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-            class="fixed bottom-4 right-4 bg-pink-600 text-white p-3 rounded-full shadow-lg hover:bg-pink-700 transition opacity-75">
-        ↑
-    </button>
+        <!-- Sangeet -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-purple-600 mb-4">Sangeet – शानदार संगीतमय शाम</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 29th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> Blazer for Gents, One-piece or Designer Saree for Ladies</p>
+        </div>
+
+        <!-- Haldi -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-yellow-500 mb-4">Haldi – रंगों की होली हल्दी</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 30th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> White Kurta with Floral Jacket for Men, Any Color Lehenga/Saree for Ladies</p>
+        </div>
+
+        <!-- Saptapadi -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-red-600 mb-4">Saptapadi – शादी के सात वचन</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 30th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> Nauvari Look for Ladies, Bara Bandi (Peshwai) or Kurta-Dhoti for Gents</p>
+        </div>
+
+        <!-- Akshata -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-pink-600 mb-4">Akshata – आशीर्वाद की बारिश</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 30th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> Any Option</p>
+        </div>
+
+        <!-- Sade Sunmukh -->
+        <div class="event-card bg-white p-6 rounded-lg shadow-md animate-fade-in">
+          <h2 class="text-3xl font-dancing-script text-indigo-600 mb-4">Sade Sunmukh – नई जिंदगी की दस्तक</h2>
+          <p class="text-gray-600 mb-2"><strong>Date:</strong> 30th Nov 2025</p>
+          <p class="text-gray-600"><strong>Dress Code:</strong> Any Option</p>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="index.html" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition text-lg font-poppins">
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-lg">#VedVi - A Love Story Begins!</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+          class="fixed bottom-4 right-4 bg-pink-600 text-white p-3 rounded-full shadow-lg hover:bg-pink-700 transition opacity-75">
+    ↑
+  </button>
 </body>
 </html>
